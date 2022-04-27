@@ -41,7 +41,7 @@ public class AccessorsStudy {
     }
 
     @Data
-    @Accessors(prefix = {"young, old"})
+    @Accessors(prefix = {"young", "old"})
     public static class Student3{
         /**
          * 姓名
@@ -77,9 +77,9 @@ public class AccessorsStudy {
 
     public static void testPrefix2() {
         Student3 student3 = new Student3();
-//        student3.setName("这是prefix");
-//        student3.setAge(20);
-//        System.out.println(student3.getName() + " " + student3.getAge());
+        student3.setName("这是prefix");
+        student3.setAge(20);
+        System.out.println(student3.getName() + " " + student3.getAge());
     }
 
     public static void main(String[] args) {
